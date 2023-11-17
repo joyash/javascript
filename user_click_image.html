@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>title</title>
+</head>
+<body>
+<script>
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+    const browserName = navigator.appName;
+    const browserVersion = navigator.vendor;
+
+    const currentURL = location.href;
+    const hostname = location.hostname;
+    const path = location.pathname;
+
+    alert (`Window width: ${windowWidth}, Window Height ${windowHeight}`);
+    alert (`Browser name: ${browserName}, Browser version ${browserVersion}`);
+    alert (`Current URL: ${currentURL}\n Hostname: ${hostname}\n Path: ${path}`);
+
+setTimeout (function () {
+  location.href = 'http://www.hs.fi';
+    }, 3000);
+const confirmation  = confirm("Do you want to continue");
+if (confirmation === ok) {
+  alert('ok')
+}else {
+  alert ('you cancel it')
+}
+
+</script>
+
+</body>
+</html>

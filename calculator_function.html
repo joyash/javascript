@@ -1,0 +1,105 @@
+<!--
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>My Calculator</h1>
+
+<script type="text/javascript">
+  let user_number1 = parseInt(prompt("Enter first number: "));
+  let user_number2 = parseInt(prompt("Enter second number: "));
+  let user_choice = prompt("Select your operation (a = add, b=sub, c=multiply, d=divide)");
+
+  function add() {
+    return user_number1 + user_number2
+  }
+
+  function sub() {
+    return user_number1 - user_number2
+   }
+
+  function multiply() {
+    return user_number1 * user_number2
+  }
+  function divide() {
+    return user_number1 / user_number2
+  }
+if (user_choice === "a") {
+  document.write("the add of the value is: " + add(user_number1,user_number2));
+  }
+if (user_choice === "b") {
+  document.write("the subtraction of the value is: " + sub(user_number1,user_number2));
+  }
+if (user_choice === "c") {
+  document.write("the multiplication of the value is: " + multiply(user_number1,user_number2));
+  }
+if (user_choice === "d") {
+  document.write("the divide of the value is: " + divide(user_number1,user_number2));
+  }
+
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="number1">Number 1: </label>
+<input type="number" id="number1" required>
+<label for="number2">Number 2: </label>
+<input type="number" id="number2" required> <br> <br>
+<button type="button" onclick="choice()">Press here for operator</button>
+<div id="result">Result will be displayed here</div> <!-- Added a result div -->
+<script>
+    function choice() {
+      let number1 = parseFloat(document.getElementById("number1").value);
+      let number2 = parseFloat(document.getElementById("number2").value);
+      let user_choice = prompt("What do you want to do: ");
+      if (user_choice === "add") {
+        showResult(add(number1, number2));
+      } else if (user_choice === "sub") {
+        showResult(sub(number1, number2));
+      } else if (user_choice === "multiply") {
+        showResult(multiply(number1, number2));
+      } else if (user_choice === "divide") {
+        if (number2 === 0) {
+          showResult("Your second input number is invalid");
+        } else {
+          showResult(divide(number1, number2));
+        }
+      } else {
+        showResult("Invalid operation. Please choose from 'add', 'sub', 'multiply', or 'divide'.");
+      }
+    }
+
+    function showResult(result) {
+      document.getElementById("result").textContent = "Result: " + result;
+      document.getElementById("number1").value = "";
+      document.getElementById("number2").value = "";
+    }
+
+    function add(number1, number2) {
+      return number1 + number2;
+    }
+    function sub(number1, number2) {
+      return number1 - number2;
+    }
+    function multiply(number1, number2) {
+      return number1 * number2;
+    }
+    function divide(number1, number2) {
+      if (number2 === 0) {
+        return "Cannot divide by zero";
+      }
+      return number1 / number2;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<form>
+  <label for="number1"><b>Number 1: </b> </label>
+  <input type="text" id="number1" required>
+  <label for="number2"><b>Number 2: </b></label>
+  <input type="text" id="number2" required>
+  <p><b>Select your operation</b></p>
+  <button type="button" onclick="addition()">Add</button>
+  <button type="button" onclick="subtraction()">Subtract</button>
+  <button type="button" onclick="multiply()">Multiply</button>
+  <button type="button" onclick="divide()">divide</button>
+</form>
+<script>
+  function addition() {
+    let number1 = parseFloat(document.getElementById("number1").value);
+    let number2 = parseFloat(document.getElementById("number2").value);
+    let result = number1 + number2
+    document.write("The addition of  " + number1 + "and  " + number2 + "is " + result )
+  }
+ function subtraction() {
+    let number1 = parseFloat(document.getElementById("number1").value);
+    let number2 = parseFloat(document.getElementById("number2").value);
+    let result = number1 - number2
+    document.write("The subtraction of  " + number1 + "and  " + number2 + "is " + result )
+  }
+
+  function multiply() {
+    let number1 = parseFloat(document.getElementById("number1").value);
+    let number2 = parseFloat(document.getElementById("number2").value);
+    let result = number1 * number2
+    document.write("The multiplication of  " + number1 + "and  " + number2 + "is " + result )
+  }
+
+  function divide() {
+    let number1 = parseFloat(document.getElementById("number1").value);
+    let number2 = parseFloat(document.getElementById("number2").value);
+    if (number2 === 0) {
+      alert("The number you provide is invalid. ")
+    }
+    else {
+      let result = number1 / number2
+    document.write("The divide of  " + number1 + "and  " + number2 + "is " + result )
+    }
+
+  }
+
+
+
+</script>
+
+</body>
+</html>

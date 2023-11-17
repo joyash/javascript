@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+
+  function dice_roll() {
+    var roll_1 = Math.floor(Math.random(1, 6) *6 + 1);
+    document.write(roll_1);
+  }
+  dice_roll();
+  for (let i in roll_1) {
+    document.write(roll_1);
+  }
+
+
+  /* module 2 question 5
+  var client_number_list = [];
+  var client_number = parseInt(prompt("Enter a number: "));
+  while (!isNaN(client_number)) {
+    if (client_number_list.includes(client_number)){
+      break;
+    }
+    client_number_list.push(client_number);
+    client_number = parseInt(prompt("Enter a number: "));
+
+  } document.write(client_number_list);
+
+
+
+  /* module 2 question 4
+  let number_list = [];
+  let user_number = parseInt(prompt("Enter your desired number:"));
+
+
+   while (user_number !==0) {
+     if (user_number < 1) {
+       break;
+     }
+     number_list.push(user_number);
+     user_number = (prompt("Enter your desired number:"));
+   }
+   document.write(number_list); */
+
+
+
+
+   /* module 2 question 3 -- this number still has problem
+   document.write("<ul>")
+  let dogs_list = [];
+  for (let i = 0; i < 6; i++) {
+    let dog_name = prompt("Enter your dog name: ");
+    dogs_list.push(dog_name);
+
+  }
+  dogs_list.reverse();
+  for (let i = 0; i < dogs_list.length; i++){
+  document.write("<li>" +dogs_list[i] +"</li>");
+  document.write("</ul>")}
+*/
+
+
+
+  // module 2 question 2 here is problem in code
+  /*document.write("<ol>")
+  let no_of_participants = parseInt(prompt("Enter the number of participants"));
+  let participants_list = []
+  for (let i = 0; i < no_of_participants; i++) {
+    let participants_name = prompt("Enter the participant's first and : ");
+    participants_list.push(participants_name);
+
+  }
+  document.write("<li>"+participants_list+"</li>");
+  document.write("</ol>"); */
+
+
+
+
+
+
+
+    /* module 2 question 1
+    let number_list = [];
+    let user_number =  parseInt(prompt("Enter a number:"));
+    let user_number1 =  parseInt(prompt("Enter a number:"));
+    let user_number2 =  parseInt(prompt("Enter a number:"));
+    let user_number3 =  parseInt(prompt("Enter a number:"));
+    let user_number4 =  parseInt(prompt("Enter a number:"));
+
+    number_list.push(user_number);
+    number_list.push(user_number1);
+    number_list.push(user_number2);
+    number_list.push(user_number3);
+    number_list.push(user_number4);
+    number_list.sort((b, a) => a - b);
+    document.write(number_list); */
+
+</script>
+
+</body>
+</html>

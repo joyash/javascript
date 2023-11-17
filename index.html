@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Student Information</h1>
+<form id="studentForm">
+    <label for="name">Name: </label>
+    <input type="text" id ="name" required>
+    <br>
+    <label for="studentnumber"> Student Number: </label>
+    <input type="text" id="studentNumber" required>
+    <br>
+    <button type="button" onclick="displayInfo()">Submit</button>
+</form>
+
+<script type="text/javascript">
+
+
+
+  //(let i = 0; i < names.length; i++) {
+   //console.log(`Name: ${names[i]}`);}
+
+  function displayInfo() {
+    var name = document.getElementById("name").value;
+    var studentNumber = document.getElementById("studentNumber").value;
+    var message = "Name: " + name+ "\nStudent Number: " + studentNumber;
+    alert(message);
+  }
+
+  /*
+    userAge = prompt("Your age?", " ");
+    userAge1 = prompt("Your age?", " ");
+    userAge = parseFloat(userAge);
+    userAge1 = parseFloat(userAge1);
+    display = userAge + userAge1;
+    console.log(display)
+    // message = "the sum of the numbers is  " + display + "."
+    message = "here is the value num1: " + userAge + "and the value: "
+    // alert(message) */
+  /* function changeColor(){
+    var text = document.querySelector("h1");
+    text.style.color = "green";
+  } */
+   /*
+   ask_user = prompt("Enter a radius");
+   ask_user = parseFloat(ask_user);
+  const pie = 3.14;
+  function area(){
+   area = pie * ask_user ** 2;
+   document.write(area);
+  }  */
+
+
+
+</script>
+
+</body>
+</html>
