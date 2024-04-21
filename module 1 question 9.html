@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>question 5</title>
+</head>
+<body>
+<script type="text/javascript">
+    'use strict';
+    let user_number = parseInt(prompt("Enter a desired number: "));
+    let isPrime = true;
+    for (let i = 2; i < user_number; i++) {
+      if (user_number % i === 0) {
+        isPrime = false;
+        break;
+      }
+    }
+    if (isPrime) {
+        document.write("This " + user_number + " is a prime number.");
+      } else {
+        document.write("This " + user_number + " is not a prime number.");
+    }
+
+ </script>
+</body>
+</html>
+
+
+

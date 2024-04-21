@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>question4</title>
+</head>
+<body>
+<script type="text/javascript">
+    'use strict';
+    let user_name = (prompt("Enter your name: "));
+    let user_group = Math.floor(Math.random() * 4) + 1;
+    if (user_group === 1) {
+      document.write(user_name + " ,Your are in Gryffindor.");
+    }
+    else if (user_group === 2) {
+      document.write(user_name + " ,You are in Slytherin.");
+    }
+    else if(user_group === 3) {
+      document.write(user_name + " ,You are in Hufflepuff.")
+    }
+    else if(user_group === 4) {
+      document.write(user_name + " ,You are in Ravenclaw.")
+    }
+</script>
+</body>
+</html>

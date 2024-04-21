@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>question7</title>
+</head>
+<body>
+<script type="text/javascript">
+    'use strict';
+    let user_dice = parseInt(prompt("How many times do you want to roll the dice."));
+    let total = 0
+     for (let i = 0; i < user_dice; i++){
+      let dice1 = Math.floor(Math.random() * 6) + 1;
+      total = total + dice1;
+      document.write("This is roll " +dice1 +"<br>");
+      document.write("this is total" +total +"<br>");
+    }
+
+</script>
+
+</body>
+</html>

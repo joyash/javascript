@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>qusestion2</title>
+</head>
+<body>
+<script type="text/javascript">
+    'use strict';
+    let user_year1 = parseInt(prompt("Enter first year: "));
+
+    let user_year2 = parseInt(prompt("Enter second year: "));
+    document.write("<ul>")
+    for (let i = user_year1; i <= user_year2; i++) {
+      if (i % 4 === 0) {
+      document.write("<li>This is a leap year " + i + "</li>")
+    }
+    document.write("</ul>")
+    }
+
+ </script>
+
+</body>
+</html>
